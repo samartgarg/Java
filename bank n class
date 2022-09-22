@@ -1,0 +1,68 @@
+import java.util.* ; 
+class Bank
+{
+    double amount;
+    String name;
+    char acc;
+    int min=1000;
+    int pin;
+    Double d;
+    void ATM(int x)
+    {
+        if(pin==x && amount>min)
+        {
+            amount=amount-d;
+        }
+        else if(pin!=x)
+        {
+            for(int q=1;q!=0;q++){
+            System.out.println("**Incorrect Pin**");
+            }
+        
+        }
+        else System.out.println("Insufficient Balance");
+        
+    }
+Bank(double am, String a, char b, int c)
+{
+    amount=am;
+    String=a;
+    acc=b;
+    pin=c;
+}
+};
+public class Main
+{ 
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+		System.out.println("Hello ");
+		System.out.println("Welcome to The BANK \nPlease choose an option\n1.To open an account\t2.To use atm\3.To Exit");
+			int i= sc.nextInt();
+	switch(i)
+	{
+	    case 1:
+	        {  
+	            System.out.println("To Open YOUR account\ Please enter your name\n ");
+	            	String name= sc.nextLine();
+	            	System.out.println("Choose An aCCOUNT Number");
+	            	char acc= sc.nextChar(); 
+	            	System.out.println("eNTER yOUR pIN");
+	            	int pin= sc.nextInt();
+	            		Double amount= sc.nextDouble(); 
+	            	
+	        }
+	   case 2:
+	       {
+	           	System.out.println("Enter YOUR Account Number");
+	           	char name= sc.nextChar();
+	           	System.out.println("Enter Your Pin");
+	           	int xx= sc.nextInt();
+	           	customer1.atm(xx)
+	       }
+	        
+	    
+	    
+	}
+	
+	}
+}
